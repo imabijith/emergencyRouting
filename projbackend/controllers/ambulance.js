@@ -1,6 +1,6 @@
 const client = require("../database");
-const accountSid = "AC32012b2991603516770c9c9dacc81e9a";
-const authToken = "75f93c2be38ef471b8c2f18d77b5b27d";
+const accountSid = //twilioAccountSID;
+const authToken = //twilioAuthToken;
 const callclient = require("twilio")(accountSid, authToken);
 
 exports.getRouteById = (req, res, next, id) => {
@@ -113,7 +113,7 @@ exports.createAmbulanceRoute = (req, res) => {
               .create({
                 url: "http://127.0.0.1:1337/",
                 to: `+91${results.phone}`,
-                from: "+12056273855",
+                from: //"twilio phone number",
               })
               .then((call) => console.log(call.sid))
               .catch((err) => console.log(err));
