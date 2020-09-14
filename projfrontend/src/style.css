@@ -1,0 +1,14 @@
+.btn,
+.jumbotron,
+.Link,
+.nav-link :hover {
+  border-radius: 0px;
+}
+
+.leaflet-container {
+    height: 80vh;
+  }
+
+#cardmap {
+    height: 200px;
+}
